@@ -112,6 +112,18 @@ public class Exercise1Test {
 	}
 	
 	@Test
+	public void testReverseHalves() {
+		assertEquals("dam", Exercise1.reverseHalves("mad"));
+		assertEquals("pool", Exercise1.reverseHalves("loop"));
+	}
+	
+	@Test
+	public void testInvertCase() {
+		assertEquals("tHIS IS A tEST", Exercise1.reverseHalves("This is a Test"));
+		assertEquals(".Ok!", Exercise1.reverseHalves(".oK!"));
+	}
+	
+	@Test
 	public void testSwap() {
 		char[] quiet = {'q', 'u', 'i', 'e', 't'};
 		char[] quite = {'q', 'u', 'i', 't', 'e'};

@@ -208,7 +208,7 @@ public class Exercise1 {
 	 * 
 	 * Example:
 	 * kindaEqual("Hi", "hi") -> true
-	 * kindaEqual("Hi!", "hi.") -> false
+	 * kindaEqual("hi!", "hi.") -> false
 	 * 
 	 * Note: The Java 8 API is a great resource for finding helpful methods.
 	 * Use the API documentation for Strings to help with the following
@@ -221,6 +221,33 @@ public class Exercise1 {
 	}
 	
 	/* Problem 14
+	 * 
+	 * Given a string, cut the string in half and return a new string
+	 * formed by reversing the two halves. If the string has an odd
+	 * number of characters, the character in the middle should remain
+	 * in the same position.
+	 * 
+	 * Example:
+	 * reverseHalves("mad") -> "dam"
+	 * reverseHalves("loop") -> "pool" 
+	 */
+	public static String reverseHalves(String str) {
+		
+	}
+	
+	/*Problem 15
+	 * 
+	 * Given a string, return a new string such that every character in the
+	 * original string has its case swapped.
+	 * 
+	 * Example:
+	 * invertCase("This is a Test") -> "tHIS IS A tEST"
+	 */
+	public static String invertCase(String str) {
+		
+	}
+	
+	/* Problem 16
 	 * 
 	 * Given an array of chars (characters) and two non-negative integers,
 	 * swap the chars at the indices of the array indicated by the integers.
@@ -238,7 +265,9 @@ public class Exercise1 {
 		
 	}
 	
-	/* Problem 15
+	
+	
+	/* Problem 17
 	 * 
 	 * Given a non-negative integer n, compute the factorial of n
 	 * (the product of all positive integers less than or equal to n)
