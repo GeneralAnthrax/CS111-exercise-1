@@ -17,6 +17,22 @@ package classes;
  *    assigns it to the cat field.
  */
 
-public class Box {
+public class Box{
+	protected Cat cat;
+	
+	public Box (Cat cat){
+		this.cat = cat;
+		
+	}
+	
+	public Cat getCat(){
+		return cat;
+	}
+	
+	public void setCat(Cat cat){
+		this.cat = cat;
+	}
+
+	
 	
 }

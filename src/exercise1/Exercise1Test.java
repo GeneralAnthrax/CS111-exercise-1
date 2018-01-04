@@ -2,8 +2,8 @@ package exercise1;
 
 import classes.Box;
 import classes.Cat;
-import matryoshka.RussianCat;
-import matryoshka.RussianBox;
+//import matryoshka.RussianCat;
+//import matryoshka.RussianBox;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -73,35 +73,6 @@ public class Exercise1Test {
 		// Try to assert that your cat has the name you gave it.
 	}
 
-	@Test
-	public void testRescueKitty() {
-		Cat cat = new Cat("Mr. Bigglesworth");
-		Box box = new Box(cat);
-		assertEquals(cat, Exercise1.rescueKitty());
-		assertNull(box.getCat());
-	}
-
-	@Test
-	public void testSecretKittyName() {
-		// Just a cat
-		RussianCat cat = new RussianCat("Mr. Bigglesworth");
-		assertEquals("Mr. Bigglesworth", Exercise1.secretKittyName(cat));
-		
-		// Cat in a box
-		RussianBox box = new RussianBox(new RussianCat("Mr. Bigglesworth"));
-		assertEquals("Mr. Bigglesworth", Exercise1.secretKittyName(box));
-		
-		// Cat in a box in a box
-		box = new RussianBox(new RussianBox(new RussianCat("Mr. Bigglesworth")));
-		assertEquals("Mr. Bigglesworth", Exercise1.secretKittyName(box));
-		
-		cat = new RussianCat("Mr. Bigglesworth");
-		box = new RussianBox(cat);
-		for (int i = 0; i < 100; i++){
-			box = new RussianBox(box);
-		}
-		assertEquals("Mr. Bigglesworth", Exercise1.secretKittyName(box));
-	}
 	
 	@Test
 	public void testKindaEqual() {
@@ -114,7 +85,7 @@ public class Exercise1Test {
 	@Test
 	public void testReverseHalves() {
 		assertEquals("dam", Exercise1.reverseHalves("mad"));
-		assertEquals("pool", Exercise1.reverseHalves("loop"));
+		assertEquals("oplo", Exercise1.reverseHalves("loop"));
 	}
 	
 	@Test
